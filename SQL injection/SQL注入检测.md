@@ -47,7 +47,7 @@ SQL注入是一种代码注入，是发生于应用程序与数据库层的安�
 #### 概念相关
 - [SQL注入-wiki](https://zh.wikipedia.org/zh-cn/SQL%E8%B3%87%E6%96%99%E9%9A%B1%E7%A2%BC%E6%94%BB%E6%93%8A)
 - [G–test of goodness-of-fit](http://www.biostathandbook.com/gtestgof.html)
-- [libinjection-blackhatusa2012](#https://www.slideshare.net/nickgsuperstar/libinjection-blackhatusa2012)
+- [libinjection-blackhatusa2012](https://www.slideshare.net/nickgsuperstar/libinjection-blackhatusa2012)
 #### 实现相关
 - [sql parse](https://docs.python.org/3/reference/expressions.html#displays-for-lists-sets-and-dictionaries)
 - [client9/libinjection](https://github.com/client9/libinjection/wiki/doc-sqli-python)
