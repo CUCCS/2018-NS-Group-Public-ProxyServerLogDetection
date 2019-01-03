@@ -1,0 +1,129 @@
+select 1 from foo where
+select @version from foo where
+select 'foo' from bar where
+select sin(1),2 from bar where
+select sin(id),2 from bar where
+select sin('1'),2 from bar where
+select sin(@version),2 from bar where
+select sin((1)),2 from bar where
+select sin((id)),2 from bar where
+select sin(('1')),2 from bar where
+select sin((@version)),2 from bar where
+select sin(((1)),2 from bar where
+select sin(((id)),2 from bar where
+select sin((('1')),2 from bar where
+select sin(((@version)),2 from bar where
+select -sin(1),2 from bar where
+select -sin(id),2 from bar where
+select -sin('1'),2 from bar where
+select -sin(@version),2 from bar where
+select -sin((1)),2 from bar where
+select -sin((id)),2 from bar where
+select -sin(('1')),2 from bar where
+select -sin((@version)),2 from bar where
+select -sin(((1)),2 from bar where
+select -sin(((id)),2 from bar where
+select -sin((('1')),2 from bar where
+select -sin(((@version)),2 from bar where
+select 1,sin(1),2 from bar where
+select 1,sin(id),2 from bar where
+select 1,sin('1'),2 from bar where
+select 1,sin(@version),2 from bar where
+select 1,sin((1)),2 from bar where
+select 1,sin((id)),2 from bar where
+select 1,sin(('1')),2 from bar where
+select 1,sin((@version)),2 from bar where
+select 1,sin(((1)),2 from bar where
+select 1,sin(((id)),2 from bar where
+select 1,sin((('1')),2 from bar where
+select 1,sin(((@version)),2 from bar where
+select -1,sin(1),2 from bar where
+select -1,sin(id),2 from bar where
+select -1,sin('1'),2 from bar where
+select -1,sin(@version),2 from bar where
+select -1,sin((1)),2 from bar where
+select -1,sin((id)),2 from bar where
+select -1,sin(('1')),2 from bar where
+select -1,sin((@version)),2 from bar where
+select -1,sin(((1)),2 from bar where
+select -1,sin(((id)),2 from bar where
+select -1,sin((('1')),2 from bar where
+select -1,sin(((@version)),2 from bar where
+select id,sin(1),2 from bar where
+select id,sin(id),2 from bar where
+select id,sin('1'),2 from bar where
+select id,sin(@version),2 from bar where
+select id,sin((1)),2 from bar where
+select id,sin((id)),2 from bar where
+select id,sin(('1')),2 from bar where
+select id,sin((@version)),2 from bar where
+select id,sin(((1)),2 from bar where
+select id,sin(((id)),2 from bar where
+select id,sin((('1')),2 from bar where
+select id,sin(((@version)),2 from bar where
+select @version,sin(1),2 from bar where
+select @version,sin(id),2 from bar where
+select @version,sin('1'),2 from bar where
+select @version,sin(@version),2 from bar where
+select @version,sin((1)),2 from bar where
+select @version,sin((id)),2 from bar where
+select @version,sin(('1')),2 from bar where
+select @version,sin((@version)),2 from bar where
+select @version,sin(((1)),2 from bar where
+select @version,sin(((id)),2 from bar where
+select @version,sin((('1')),2 from bar where
+select @version,sin(((@version)),2 from bar where
+select '1',sin(1),2 from bar where
+select '1',sin(id),2 from bar where
+select '1',sin('1'),2 from bar where
+select '1',sin(@version),2 from bar where
+select '1',sin((1)),2 from bar where
+select '1',sin((id)),2 from bar where
+select '1',sin(('1')),2 from bar where
+select '1',sin((@version)),2 from bar where
+select '1',sin(((1)),2 from bar where
+select '1',sin(((id)),2 from bar where
+select '1',sin((('1')),2 from bar where
+select '1',sin(((@version)),2 from bar where
+select -'1',sin(1),2 from bar where
+select -'1',sin(id),2 from bar where
+select -'1',sin('1'),2 from bar where
+select -'1',sin(@version),2 from bar where
+select -'1',sin((1)),2 from bar where
+select -'1',sin((id)),2 from bar where
+select -'1',sin(('1')),2 from bar where
+select -'1',sin((@version)),2 from bar where
+select -'1',sin(((1)),2 from bar where
+select -'1',sin(((id)),2 from bar where
+select -'1',sin((('1')),2 from bar where
+select -'1',sin(((@version)),2 from bar where
+select 1,(2),3 from bar where
+select (1),(2),3 from bar where
+select ((1)),(2),3 from bar where
+select (((1))),(2),3 from bar where
+select ('1'),(2),3 from bar where
+select (('1')),(2),3 from bar where
+select ((('1'))),(2),3 from bar where
+select (@version),(2),3 from bar where
+select ((@version)),(2),3 from bar where
+select (((@version))),(2),3 from bar where
+select (id),(2),3 from bar where
+select ((id)),(2),3 from bar where
+select (((id))),(2),3 from bar where
+select (@version),(2),3 from bar where
+select (((((1,2,3,4)))) from bar
+ascii(substring(version() from 1 for 1))
+length((select length(version())))
+ascii(substring(length(version()),1,1))
+(select id from (select id,@v:=@v+1 as pos from articles y join (select @v:=0) k limit 255) x where pos=1)
+(select id from (select id,@v:=@v+1 as pos from articles y join (select @v:=0) k limit 255) x where pos=ascii(substring(version() from 1 for 1)))
+vulnerable_site' and 1=5 or title=() #'
+conv(hex(substr(version() FROM 1 FOR 2)),16,10)
+conv(hex(substr(version() FROM 1 FOR 2)),16,10) >> 0x6
+conv(hex(substr(version() FROM 2 FOR 2)),16,10) << 0x2 >> 0x6
+uncompress(compress(version()))
+LENGTH(compress(version()))
+LENGTH(version())
+LENGTH(load_file('/etc/passwd'))
+LENGTH(compress(load_file('/etc/passwd')))
+
