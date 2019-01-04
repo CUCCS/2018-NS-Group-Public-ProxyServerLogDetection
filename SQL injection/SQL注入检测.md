@@ -3,7 +3,7 @@
 SQL注入是一种代码注入，是发生于应用程序与数据库层的安全漏洞。恶意SQL语句实现SQL注入攻击包括通过从客户端到应用程序的输入数据插入或"注入"SQL查询。一个成功的SQL注入攻击可实现从数据库中读取敏感数据，修改数据库的数据,对数据库执行管理操作(如关闭DBMS)，恢复DBMS文件系统上存在的给定文件的内容，并在某些情况下向操作系统发出命令。
 
 ### 实现
-主要还是根据[data_hacking](https://github.com/c4pr1c3/data_hacking)进行实验，尝试将其中的SQL注入检测算法```SQL Parse```更换成![libinjection](https://github.com/client9/libinjection)但是实验结果表明这个替换完全失败了，之后会给出比较结果
+主要还是根据[data_hacking](https://github.com/c4pr1c3/data_hacking)进行实验，尝试将其中的SQL注入检测算法```SQL Parse```更换成[libinjection](https://github.com/client9/libinjection)但是实验结果表明这个替换完全失败了，之后会给出比较结果
 
 总体步骤：
 - 对训练集进行处理
